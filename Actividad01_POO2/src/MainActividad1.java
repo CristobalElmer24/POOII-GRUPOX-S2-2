@@ -5,8 +5,6 @@ public class MainActividad1 {
     public static void main(String[] args) {
         List<Curso> listaCursos = new ArrayList<Curso>();
 
-        // Al crear el alumno, el constructor lee automaticamente
-        // el archivo cursosAlumnos.txt y llena su lista de cursos
         Alumno alumno1 = new Alumno("2023100", "Juan Perez", listaCursos);
         alumno1.mostrarCursos();
 
