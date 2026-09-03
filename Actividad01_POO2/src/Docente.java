@@ -10,10 +10,10 @@ public class Docente extends Persona {
         this.facultadDocente = facultadDocente;
     }
 
-    // Recibe un Curso y le asigna una nota al azar entre 0 y 20
+   
     public void calificarCurso(Curso curso) {
         Random random = new Random();
-        int nota = random.nextInt(21); // genera numero entre 0 y 20
+        int nota = random.nextInt(21); 
         curso.setNota(nota);
         System.out.println("El docente " + this.nombre + " califico el curso " + curso.getNombreCurso() + " con nota " + nota);
     }
