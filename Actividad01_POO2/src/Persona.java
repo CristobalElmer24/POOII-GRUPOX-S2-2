@@ -12,8 +12,6 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    // Constructor simple, usado por Alumno ya que el constructor
-    // que pide el enunciado solo recibe el nombre
     public Persona(String nombre) {
         this.nombre = nombre;
     }
