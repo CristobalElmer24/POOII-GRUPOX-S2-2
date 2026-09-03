@@ -10,14 +10,11 @@ public class Alumno extends Persona {
     public Alumno(String codigo, String nombre, List<Curso> listaCursos){
         super(nombre);
         this.codigoAlumno = codigo;
-        this.listaCursos = listaCursos;
-        //lee desde un archivo los cursos que corresponden al código del alumno
-        //que se recibe como parámetro en el constructor
+        this.listaCursos = listaCursos;        
         this.leeCursosAlumno("cursosAlumnos.txt");
     }
 
-    // Lee el archivo de texto linea por linea (no se sabe cuantos cursos hay)
-    // y va agregando cada curso a la lista del alumno
+
     public void leeCursosAlumno(String archivo) {
         try {
             BufferedReader br = new BufferedReader(new FileReader(archivo));
